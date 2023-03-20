@@ -1,0 +1,120 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Imposto de Renda | Sandra </title> 
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+        
+    </head>
+    <body>
+        <header class="cabecalho">
+            <div class="container item">
+                <a href="https://api.whatsapp.com/send?phone=+5511961674877&text=Olá%21%20Seja%20Bem%20Vindo.">
+                    <i class="bi bi-whatsapp icone-whats"></i>
+                </a>
+                <h1>Imposto <span>de Renda</span> 2023</h1>
+            </div>
+        </header>
+        <main>
+            <div class="fundo-leao">
+                <div class="container">
+                    <div class="info-pessoais">
+                        <img src="./imagens/img-sandra.jpg" alt="">
+                        <div class="item-pessoal">
+                            <a class="link">(11) 95221-6311</a>
+                            <p class="nome">Sandra Cristina</p>
+                        </div>
+                    </div>
+                    <div class="banner-texto">
+                        <div class="fundo">
+                            <h2>ATENÇÃO AO PRAZO !</h2>
+                            <div class="calendar">
+                                <i class="bi bi-calendar-check"></i>
+                            </div>
+
+                            <p>15 de <span>Março</span> </p>
+                            <p>Até</p>
+                            <p>31 de <span>Maio</span></p>
+                        </div>
+                    </div>
+                </div>
+                <p class="texto-bottom" id="texto-bottom">Não deixe para ultima hora !</p>
+            </div>
+
+            <section class="valores">
+                <div class="container valores-titulo">
+                    <img src="./imagens/seta-direita.png" alt="">
+                    <h1>Valores</h1>
+                </div>
+
+                <div class="table-valores">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Descrição</th>
+                                <th>Valor</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Sem aplicações</td>
+                                <td>R$100,00</td>
+                            </tr>
+                            <tr>
+                                <td>Com aplicações</td>
+                                <td>R$130,00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+
+            <h2 class="container">Clique no botão abaixo para entrar em contato</h2>
+                <div class="botao">
+                    <a href="https://api.whatsapp.com/send?phone=+5511961674877&text=Olá%21%20Seja%20Bem%20Vindo.">
+                        <!-- <button> -->
+                            Chamar agora  
+                            <i class="bi bi-whatsapp" style="margin-left: 10px"></i>
+                        <!-- </button> -->
+                    </a>
+                </div>
+            </section>
+
+            <section class="sobre fundo-leao">
+                <h1>Sobre</h1>
+                
+                <div class="fundo-sobre container">
+                    <p>Me chamo Sandra Cristina</p>
+                    <p>Bacharel em Ciências Contábeis</p>
+                    <p>CRC Ativo</p>
+                    <p>Tenho mais de 10 anos atuando no setor fiscal.</p>
+                </div>
+            </section>
+        </main>
+        <footer class="rodape">
+            <div class="container item">
+                <a href="https://api.whatsapp.com/send?phone=+5511961674877&text=Olá%21%20Seja%20Bem%20Vindo.">
+                <i class="bi bi-whatsapp icone-whats"></i>
+                </a>
+                <h1>Imposto <span>de Renda</span> 2023</h1>
+            </div>
+        </footer>
+      
+        <script>
+            function typeWriter(elemento) {
+                const textoArray = elemento.innerHTML.split('');
+                elemento.innerHTML = '';
+                textoArray.forEach((letra, i) => {
+                    setTimeout(() => elemento.innerHTML += letra, 75 * i);
+                });
+            }
+
+            const titulo = document.getElementById('texto-bottom');
+            typeWriter(titulo)
+        </script>
+        
+    </body>
+</html>
