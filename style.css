@@ -56,6 +56,10 @@
     background-attachment: fixed;
     height: 100vh;
     position: relative;
+      -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .info-pessoais {
